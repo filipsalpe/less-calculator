@@ -1,0 +1,44 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Less</title>
+
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="all" href="main.css">
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js"></script>
+
+    <script type="text/javascript" src="less.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <form>
+                <fieldset>
+                    <legend>Enter the base and desired colors</legend>
+                    <label>Base color</label>
+                    <div class="input-prepend input-append">
+                      <span class="add-on">#</span>
+                      <input class="span10" id="base" type="text" placeholder="Base color">
+                      <span class="add-on preview"></span>
+                    </div>
+                    <label>Desired color</label>
+                    <div class="input-prepend input-append">
+                      <span class="add-on">#</span>
+                      <input class="span10" id="target" type="text" placeholder="Desired color">
+                      <span class="add-on preview"></span>
+                    </div>
+                </fieldset>
+                <button type="submit" class="btn btn-primary">Calculate</button>
+            </form>
+            <div id="results"></div>
+        </div>
+    </div>
+</body>
+
