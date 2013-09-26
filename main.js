@@ -22,7 +22,7 @@ $(function () {
             $('#results').html('The difference between colors is ' + diff + '%.');
             compute(base, target);
         } else {
-            $('#results').html('Unable to calculate');
+            $('#results').html('<h4>Unable to calculate, please provide valid colors<h4>');
         }
     });
 
@@ -40,10 +40,6 @@ $(function () {
 
     function getDiff(color1, color2) {
         return less.tree.functions.difference(color1, color2);
-    }
-
-    function getAverage(color1, color2) {
-        return less.tree.functions.average(color1, color2);
     }
 
     function compute(base, target) {
